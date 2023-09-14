@@ -1,4 +1,8 @@
 ui = input("Position: ").lower()
 
-evenlist = ["a", "c", "e", "g"]
+list1 = ["a", "c", "e", "g"]
+list2 = ["b", "d", "f", "h"]
+
 if int(ui[1]) % 2 == 0:
+    if ui[0] in list1:
+        
