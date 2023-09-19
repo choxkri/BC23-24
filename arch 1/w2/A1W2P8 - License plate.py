@@ -1,4 +1,4 @@
-license_plate = input().upper().strip("-")
+license_plate = input().upper()
 
 valid = [
     "XX-99-99",
@@ -16,13 +16,14 @@ valid = [
 ]
 
 converted = ""
+
 for i in range(len(license_plate)):
     if license_plate[i].isnumeric():
         converted += "9"
     
     elif license_plate[i].isalpha():
         converted += "X"
-    
+
     elif license_plate[i] == "-":
         converted += "-"
 
