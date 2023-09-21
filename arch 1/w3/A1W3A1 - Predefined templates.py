@@ -57,7 +57,8 @@ def BasicQuestions():
 def JobOffer(info: list):
     asking = True
     while asking:
-        salary = float(input("Annual Salary?: "))
+        salary = input("Annual Salary?: ")
+        salary = float(salary.replace(".", "").replace(",", "."))
         asking = SalaryCheck(salary)
         if asking:
             print("Input error")
