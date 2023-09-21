@@ -1,5 +1,3 @@
-running = True
-
 def NameCheck(name: str):
     if 2 <= len(name) <= 10 and name.isalpha() and name[0:1] == name[0:1].upper():
         return False
@@ -126,7 +124,7 @@ def OfferOrRejection(info: list, option: str):
     elif option == "Rejection":
         print(Rejection(info))
 
-
+running = True
 while running:
     asking = True
     while asking:
