@@ -12,11 +12,11 @@ while len(x) == 0:
  
 
 newlist = []
-for i in x:
+for i in x4:
     newlist.append(i)
 
 
- 
+
 
 newstring = ""
 newlist.reverse()
